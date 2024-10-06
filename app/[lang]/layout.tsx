@@ -3,7 +3,6 @@ import "../../styles/globals.css";
 
 import { Viewport } from 'next';
 
-import { userRegionHandler } from '@/utils/userRegion';
 import {Header} from "@/components/header";
 
 export const runtime = 'edge';
