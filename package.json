@@ -6,21 +6,50 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prepare": "husky",
+    "commitlint": "commitlint --edit",
+    "lint:script": "eslint src",
+    "lint:type": "tsc --noEmit --pretty",
+    "lint-styles": "stylelint src/**/*.css --fix"
   },
   "dependencies": {
+    "next": "14.2.14",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.14"
+    "react-dom": "^18"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@ant-design/nextjs-registry": "^1.0.1",
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
+    "antd": "^5.21.2",
+    "autoprefixer": "^10.0.1",
+    "clsx": "^2.1.1",
     "eslint": "^8",
-    "eslint-config-next": "14.2.14"
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.1.0",
+    "eslint-config-next": "14.2.14",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-cypress": "^2.15.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "globals": "^15.10.0",
+    "husky": "^9.1.6",
+    "postcss": "^8",
+    "prettier": "^3.2.5",
+    "stylelint": "^16.2.1",
+    "stylelint-config-recommended": "^14.0.0",
+    "stylelint-config-standard": "^36.0.0",
+    "stylelint-config-standard-scss": "^13.0.0",
+    "stylelint-config-tailwindcss": "^0.0.7",
+    "stylelint-no-unsupported-browser-features": "^8.0.1",
+    "stylelint-order": "^6.0.4",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
   }
 }
