@@ -1,0 +1,66 @@
+body {
+  font-size: var(--font-size-body);
+  letter-spacing: var(--letter-spacing-body, normal);
+  line-height: var(--line-height-body);
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  padding: 0;
+  user-select: none;
+}
+
+hr {
+  background-color: currentcolor;
+  height: 0.1rem;
+  margin: var(--spacing-2) 0;
+  opacity: 0.08;
+  width: 100%;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: var(--font-size-html);
+  height: 100%;
+  -ms-overflow-style: scrollbar;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+a {
+  color: var(--theme-link-color), inherit;
+  text-decoration:none;
+}
+
+.visuallyHidden,
+.visuallyHiddenFocusable:not(:focus, :focus-within) {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px; /* Fix for https://github.com/twbs/bootstrap/issues/25686 */
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+

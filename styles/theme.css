@@ -1,0 +1,768 @@
+.theme {
+  background-color: var(--theme-background-color, #fff);
+  color: var(--theme-text-color, #000);
+}
+
+.theme__white {
+  --theme-background-color: var(--color-white);
+  --theme-heading-color: var(--color-charcoal-900);
+  --theme-text-color: var(--color-charcoal-900);
+  --theme-section-title-border-color: var(--color-charcoal-900);
+  --theme-divider-color: var(--color-charcoal-50);
+
+  --theme-icon-rounded-background-color: var(--color-blue-50);
+  --theme-icon-accent-path-color: var(--color-blue-500); /* List special color for icon path */
+
+  --theme-link-text-color: var(--color-blue-500);
+  --theme-link-icon-rounded-path-color: var(--theme-icon-rounded-path-color);
+  --theme-link-icon-rounded-background-color: var(--theme-icon-rounded-background-color);
+
+  --theme-button-primary-background-color: var(--button-blue-background-color);
+  --theme-button-primary-text-color: var(--button-blue-text-color);
+  --theme-button-primary-focus-border-color: var(--button-blue-focus-border-color);
+  --theme-button-primary-focus-background-opacity: var(--button-blue-focus-background-opacity);
+  --theme-button-primary-icon-path-color: var(--button-blue-icon-path-color);
+  --theme-button-primary-icon-rounded-path-color: var(--button-blue-icon-rounded-path-color);
+  --theme-button-primary-icon-rounded-background-color: var(--button-blue-icon-rounded-background-color);
+  --theme-button-primary-border-color: var(--color-charcoal-900);
+
+  --theme-button-secondary-background-color: var(--color-blue-50);
+  --theme-button-secondary-text-color: var(--color-blue-500);
+  --theme-button-secondary-focus-border-color: var(--theme-button-secondary-icon-rounded-text-color);
+  --theme-button-secondary-focus-background-opacity: 0.05;
+  --theme-button-secondary-icon-path-color: var(--color-blue-300);
+  --theme-button-secondary-icon-rounded-path-color: var(--theme-button-secondary-text-color);
+  --theme-button-secondary-icon-rounded-background-color: var(--color-blue-100);
+  --theme-button-secondary-border-color: rgb(184 208 218 / 50%);
+
+  --theme-input-background-color: var(--color-cream-500);
+  --theme-input-icon-background-color: var(--color-white);
+
+  --theme-accordion-background-color: var(--color-cream-500);
+  --theme-accordion-tag-background-color: var(--color-white);
+  --theme-accordion-icon-background-color: var(--color-white);
+
+  --theme-card-background-color: var(--color-cream-500);
+  --theme-card-icon-background-color: var(--color-cream-500);
+
+  --theme-tag-background-color: var(--color-cream-500);
+  --theme-card-tag-background-color: var(--color-white);
+
+  --theme-event-background-color: var(--color-cream-500);
+
+  --theme-section-title-button-color: var(--color-blue-500);
+  --theme-section-title-button-background-color: var(--color-blue-50);
+
+  --theme-table-background-color: var(--color-cream-500);
+  --theme-simple-filters-background-color: var(--color-charcoal-900);
+  --theme-simple-filters-background-opacity: 0.12;
+  --theme-simple-filters-color: var(--color-charcoal-900);
+  --theme-simple-filters-checked-background-color: var(--color-charcoal-500);
+  --theme-simple-filters-checked-background-opacity: 1;
+  --theme-simple-filters-checked-color: var(--color-white);
+}
+
+.theme__cream {
+  --theme-background-color: var(--color-cream-500);
+  --theme-heading-color: var(--color-charcoal-900);
+  --theme-text-color: var(--color-charcoal-900);
+  --theme-section-title-border-color: var(--color-charcoal-900);
+  --theme-divider-color: var(--color-charcoal-50);
+
+  --theme-icon-accent-path-color: var(--color-blue-500); /* List special color for icon path */
+  --theme-icon-rounded-background-color: var(--color-charcoal-50);
+  --theme-icon-accent-rounded-background-color: var(--color-blue-50); /* List special color for icon background */
+
+  --theme-link-text-color: var(--color-blue-500);
+  --theme-link-icon-rounded-path-color: var(--color-blue-500);
+  --theme-link-icon-rounded-background-color: var(--color-blue-50);
+
+  --theme-button-primary-background-color: var(--button-black-background-color);
+  --theme-button-primary-text-color: var(--button-black-text-color);
+  --theme-button-primary-focus-border-color: var(--button-black-focus-border-color);
+  --theme-button-primary-focus-background-opacity: var(--button-black-focus-background-opacity);
+  --theme-button-primary-icon-path-color: var(--button-black-icon-path-color);
+  --theme-button-primary-icon-rounded-path-color: var(--button-black-icon-rounded-path-color);
+  --theme-button-primary-icon-rounded-background-color: var(--button-black-icon-rounded-background-color);
+  --theme-button-primary-border-color: rgb(255 255 255 / 24%);
+
+  --theme-accordion-background-color: var(--color-white);
+  --theme-accordion-tag-background-color: var(--color-cream-500);
+  --theme-accordion-icon-background-color: var(--color-cream-500);
+
+  --theme-button-secondary-background-color: var(--color-charcoal-50);
+  --theme-button-secondary-text-color: var(--color-charcoal-900);
+  --theme-button-secondary-focus-border-color: var(--color-charcoal-200);
+  --theme-button-secondary-focus-background-opacity: 0.05;
+  --theme-button-secondary-icon-path-color: var(--color-charcoal-200);
+  --theme-button-secondary-icon-rounded-path-color: var(--theme-button-secondary-text-color);
+  --theme-button-secondary-icon-rounded-background-color: var(--color-charcoal-100);
+  --theme-button-secondary-border-color: rgb(186 191 192 / 50%);
+
+  --theme-information-card-background-color-hover: var(--color-cream-600);
+
+  --theme-tag-background-color: var(--color-white);
+  --theme-card-icon-background-color: var(--color-white);
+
+  --theme-simple-filters-background-color: var(--color-charcoal-900);
+  --theme-simple-filters-background-opacity: 0.12;
+  --theme-simple-filters-color: var(--color-charcoal-900);
+  --theme-simple-filters-checked-background-color: var(--color-charcoal-500);
+  --theme-simple-filters-checked-background-opacity: 1;
+  --theme-simple-filters-checked-color: var(--color-white);
+
+  --theme-section-title-button-color: var(--color-blue-500);
+  --theme-section-title-button-background-color: var(--color-blue-50);
+
+  --theme-input-background-color: var(--color-white);
+  --theme-button-form-icon-background-color: var(--button-blue-background-color);
+}
+
+.theme__charcoal {
+  --theme-background-color: var(--color-charcoal-900);
+  --theme-heading-color: var(--color-white);
+  --theme-text-color: var(--color-white);
+  --theme-section-title-border-color: var(--color-white);
+  --theme-divider-color: var(--color-charcoal-500);
+
+  --theme-icon-rounded-background-color: var(--color-charcoal-400);
+
+  --theme-link-text-color: var(--color-white);
+  --theme-link-icon-rounded-path-color: var(--theme-icon-rounded-path-color);
+  --theme-link-icon-rounded-background-color: var(--theme-icon-rounded-background-color);
+
+  --theme-button-primary-background-color: var(--button-white-background-color);
+  --theme-button-primary-text-color: var(--button-white-text-color);
+  --theme-button-primary-focus-border-color: var(--button-white-focus-border-color);
+  --theme-button-primary-focus-background-opacity: var(--button-white-focus-background-opacity);
+  --theme-button-primary-icon-path-color: var(--button-white-icon-path-color);
+  --theme-button-primary-icon-rounded-path-color: var(--button-white-icon-rounded-path-color);
+  --theme-button-primary-icon-rounded-background-color: var(--button-white-icon-rounded-background-color);
+  --theme-button-primary-border-color: var(--color-cream-700);
+
+  --theme-button-secondary-background-color: var(--color-charcoal-400);
+  --theme-button-secondary-text-color: var(--color-white);
+  --theme-button-secondary-focus-border-color: var(--theme-button-secondary-icon-rounded-background-color);
+  --theme-button-secondary-focus-background-opacity: 0.05;
+  --theme-button-secondary-icon-path-color: var(--color-charcoal-200);
+  --theme-button-secondary-icon-rounded-path-color: var(--color-charcoal-900);
+  --theme-button-secondary-icon-rounded-background-color: var(--color-charcoal-200);
+  --theme-button-secondary-border-color: rgb(87 98 102 / 50%);
+
+  --theme-card-icon-background-color: var(--color-white);
+
+  --theme-tag-background-color: var(--color-cream-500);
+
+  --theme-simple-filters-background-color: var(--color-white);
+  --theme-simple-filters-background-opacity: 0.24;
+  --theme-simple-filters-color: var(--color-white);
+  --theme-simple-filters-checked-background-color: var(--color-charcoal-50);
+  --theme-simple-filters-checked-background-opacity: 1;
+  --theme-simple-filters-checked-color: var(--color-charcoal-900);
+
+  --theme-section-title-button-color: var(--color-white);
+  --theme-section-title-button-background-color: rgb(255 255 255 / 24%);
+}
+
+.theme__gray {
+  --theme-background-color: var(--color-charcoal-500);
+  --theme-heading-color: var(--color-white);
+  --theme-text-color: var(--color-white);
+  --theme-section-title-border-color: var(--color-white);
+  --theme-divider-color: var(--color-charcoal-400);
+
+  --theme-icon-rounded-background-color: var(--color-charcoal-400);
+
+  --theme-link-text-color: var(--color-white);
+  --theme-link-icon-rounded-path-color: var(--theme-icon-rounded-path-color);
+  --theme-link-icon-rounded-background-color: var(--theme-icon-rounded-background-color);
+
+  --theme-button-primary-background-color: var(--button-white-background-color);
+  --theme-button-primary-text-color: var(--button-white-text-color);
+  --theme-button-primary-focus-border-color: var(--button-white-focus-border-color);
+  --theme-button-primary-focus-background-opacity: var(--button-white-focus-background-opacity);
+  --theme-button-primary-icon-path-color: var(--button-white-icon-path-color);
+  --theme-button-primary-icon-rounded-path-color: var(--button-white-icon-rounded-path-color);
+  --theme-button-primary-icon-rounded-background-color: var(--button-white-icon-rounded-background-color);
+  --theme-button-primary-border-color: var(--color-charcoal-900);
+
+  --theme-button-secondary-background-color: var(--color-charcoal-400);
+  --theme-button-secondary-text-color: var(--color-white);
+  --theme-button-secondary-focus-border-color: var(--theme-button-secondary-icon-rounded-background-color);
+  --theme-button-secondary-focus-background-opacity: 0.05;
+  --theme-button-secondary-icon-path-color: var(--color-charcoal-200);
+  --theme-button-secondary-icon-rounded-path-color: var(--color-charcoal-900);
+  --theme-button-secondary-icon-rounded-background-color: var(--color-charcoal-200);
+  --theme-button-secondary-border-color: rgb(87 98 102 / 50%);
+
+  --theme-card-icon-background-color: var(--color-white);
+
+  --theme-simple-filters-background-color: var(--color-white);
+  --theme-simple-filters-background-opacity: 0.24;
+  --theme-simple-filters-color: var(--color-white);
+  --theme-simple-filters-checked-background-color: var(--color-white);
+  --theme-simple-filters-checked-background-opacity: 1;
+  --theme-simple-filters-checked-color: var(--color-charcoal-900);
+
+  --theme-section-title-button-color: var(--color-white);
+  --theme-section-title-button-background-color: rgb(255 255 255 / 24%);
+}
+
+.theme__night {
+  --theme-background-color: var(--color-blue-800);
+  --theme-heading-color: var(--color-white);
+  --theme-text-color: var(--color-white);
+  --theme-section-title-border-color: var(--color-white);
+  --theme-divider-color: var(--color-charcoal-500);
+
+  --theme-icon-rounded-background-color: var(--color-charcoal-400);
+
+  --theme-link-text-color: var(--color-white);
+  --theme-link-icon-rounded-path-color: var(--theme-icon-rounded-path-color);
+  --theme-link-icon-rounded-background-color: var(--theme-icon-rounded-background-color);
+
+  --theme-button-primary-background-color: var(--button-white-background-color);
+  --theme-button-primary-text-color: var(--button-white-text-color);
+  --theme-button-primary-focus-border-color: var(--button-white-focus-border-color);
+  --theme-button-primary-focus-background-opacity: var(--button-white-focus-background-opacity);
+  --theme-button-primary-icon-path-color: var(--button-white-icon-path-color);
+  --theme-button-primary-icon-rounded-path-color: var(--button-white-icon-rounded-path-color);
+  --theme-button-primary-icon-rounded-background-color: var(--button-white-icon-rounded-background-color);
+  --theme-button-primary-border-color: var(--color-cream-700);
+
+  --theme-button-secondary-background-color: var(--color-charcoal-400);
+  --theme-button-secondary-text-color: var(--color-white);
+  --theme-button-secondary-focus-border-color: var(--theme-button-secondary-icon-rounded-background-color);
+  --theme-button-secondary-focus-background-opacity: 0.05;
+  --theme-button-secondary-icon-path-color: var(--color-charcoal-200);
+  --theme-button-secondary-icon-rounded-path-color: var(--color-charcoal-900);
+  --theme-button-secondary-icon-rounded-background-color: var(--color-charcoal-200);
+  --theme-button-secondary-border-color: rgb(87 98 102 / 50%);
+
+  --theme-card-icon-background-color: var(--color-white);
+
+  --theme-tag-background-color: var(--color-cream-500);
+
+  --theme-simple-filters-background-color: var(--color-white);
+  --theme-simple-filters-background-opacity: 0.24;
+  --theme-simple-filters-color: var(--color-white);
+  --theme-simple-filters-checked-background-color: var(--color-charcoal-50);
+  --theme-simple-filters-checked-background-opacity: 1;
+  --theme-simple-filters-checked-color: var(--color-charcoal-900);
+
+  --theme-section-title-button-color: var(--color-white);
+  --theme-section-title-button-background-color: rgb(255 255 255 / 24%);
+}
+
+.theme__oxford {
+  --theme-background-color: var(--color-blue-600);
+  --theme-heading-color: var(--color-white);
+  --theme-text-color: var(--color-white);
+  --theme-section-title-border-color: var(--color-white);
+  --theme-divider-color: var(--color-blue-400);
+
+  --theme-icon-rounded-background-color: rgb(255 255 255 / 20%);
+
+  --theme-link-text-color: var(--color-white);
+  --theme-link-icon-rounded-path-color: var(--theme-icon-rounded-path-color);
+  --theme-link-icon-rounded-background-color: var(--theme-icon-rounded-background-color);
+
+  --theme-button-primary-background-color: var(--button-white-background-color);
+  --theme-button-primary-text-color: var(--button-white-text-color);
+  --theme-button-primary-focus-border-color: var(--button-white-focus-border-color);
+  --theme-button-primary-focus-background-opacity: var(--button-white-focus-background-opacity);
+  --theme-button-primary-icon-path-color: var(--button-white-icon-path-color);
+  --theme-button-primary-icon-rounded-path-color: var(--button-white-icon-rounded-path-color);
+  --theme-button-primary-icon-rounded-background-color: var(--button-white-icon-rounded-background-color);
+  --theme-button-primary-border-color: rgb(7 24 30 / 24%);
+
+  --theme-button-secondary-background-color: var(--color-blue-400);
+  --theme-button-secondary-text-color: var(--color-white);
+  --theme-button-secondary-focus-border-color: var(--theme-button-secondary-icon-rounded-background-color);
+  --theme-button-secondary-focus-background-opacity: 0.05;
+  --theme-button-secondary-icon-path-color: var(--color-blue-200);
+  --theme-button-secondary-icon-rounded-path-color: var(--color-charcoal-900);
+  --theme-button-secondary-icon-rounded-background-color: var(--color-blue-200);
+  --theme-button-secondary-border-color: rgb(51 121 150 / 50%);
+
+  --theme-card-icon-background-color: rgb(255 255 255 / 50%);
+
+  --theme-simple-filters-background-color: var(--color-white);
+  --theme-simple-filters-background-opacity: 0.24;
+  --theme-simple-filters-color: var(--color-white);
+  --theme-simple-filters-checked-background-color: var(--color-white);
+  --theme-simple-filters-checked-background-opacity: 1;
+  --theme-simple-filters-checked-color: var(--color-charcoal-900);
+
+  --theme-section-title-button-color: var(--color-white);
+  --theme-section-title-button-background-color: rgb(255 255 255 / 24%);
+}
+
+.theme__blue {
+  --theme-background-color: var(--color-blue-500);
+  --theme-heading-color: var(--color-white);
+  --theme-text-color: var(--color-white);
+  --theme-section-title-border-color: var(--color-white);
+  --theme-divider-color: var(--color-blue-400);
+
+  --theme-icon-rounded-background-color: rgb(255 255 255 / 20%);
+
+  --theme-link-text-color: var(--color-white);
+  --theme-link-icon-rounded-path-color: var(--theme-icon-rounded-path-color);
+  --theme-link-icon-rounded-background-color: var(--theme-icon-rounded-background-color);
+
+  --theme-button-primary-background-color: var(--button-white-background-color);
+  --theme-button-primary-text-color: var(--button-white-text-color);
+  --theme-button-primary-focus-border-color: var(--button-white-focus-border-color);
+  --theme-button-primary-focus-background-opacity: var(--button-white-focus-background-opacity);
+  --theme-button-primary-icon-path-color: var(--button-white-icon-path-color);
+  --theme-button-primary-icon-rounded-path-color: var(--button-white-icon-rounded-path-color);
+  --theme-button-primary-icon-rounded-background-color: var(--button-white-icon-rounded-background-color);
+  --theme-button-primary-border-color: rgb(7 24 30 / 24%);
+
+  --theme-button-secondary-background-color: var(--color-blue-400);
+  --theme-button-secondary-text-color: var(--color-white);
+  --theme-button-secondary-focus-border-color: var(--theme-button-secondary-icon-rounded-background-color);
+  --theme-button-secondary-focus-background-opacity: 0.05;
+  --theme-button-secondary-icon-path-color: var(--color-blue-200);
+  --theme-button-secondary-icon-rounded-path-color: var(--color-charcoal-900);
+  --theme-button-secondary-icon-rounded-background-color: var(--color-blue-200);
+  --theme-button-secondary-border-color: rgb(51 121 150 / 50%);
+
+  --theme-card-icon-background-color: rgb(255 255 255 / 50%);
+
+  --theme-simple-filters-background-color: var(--color-white);
+  --theme-simple-filters-background-opacity: 0.24;
+  --theme-simple-filters-color: var(--color-white);
+  --theme-simple-filters-checked-background-color: var(--color-white);
+  --theme-simple-filters-checked-background-opacity: 1;
+  --theme-simple-filters-checked-color: var(--color-charcoal-900);
+
+  --theme-section-title-button-color: var(--color-white);
+  --theme-section-title-button-background-color: rgb(255 255 255 / 24%);
+}
+
+.theme__heaven {
+  --theme-background-color: var(--color-blue-400);
+  --theme-heading-color: var(--color-white);
+  --theme-text-color: var(--color-white);
+  --theme-section-title-border-color: var(--color-white);
+  --theme-divider-color: var(--color-blue-100);
+
+  --theme-icon-rounded-background-color: rgb(255 255 255 / 20%);
+
+  --theme-link-text-color: var(--color-white);
+  --theme-link-icon-rounded-path-color: var(--theme-icon-rounded-path-color);
+  --theme-link-icon-rounded-background-color: var(--theme-icon-rounded-background-color);
+
+  --theme-button-primary-background-color: var(--button-white-background-color);
+  --theme-button-primary-text-color: var(--button-white-text-color);
+  --theme-button-primary-focus-border-color: var(--button-white-focus-border-color);
+  --theme-button-primary-focus-background-opacity: var(--button-white-focus-background-opacity);
+  --theme-button-primary-icon-path-color: var(--button-white-icon-path-color);
+  --theme-button-primary-icon-rounded-path-color: var(--button-white-icon-rounded-path-color);
+  --theme-button-primary-icon-rounded-background-color: var(--button-white-icon-rounded-background-color);
+  --theme-button-primary-border-color: rgb(7 24 30 / 24%);
+
+  --theme-button-secondary-background-color: var(--color-blue-100);
+  --theme-button-secondary-text-color: var(--color-charcoal-900);
+  --theme-button-secondary-focus-border-color: var(--theme-button-secondary-icon-rounded-background-color);
+  --theme-button-secondary-focus-background-opacity: 0.05;
+  --theme-button-secondary-icon-path-color: var(--color-blue-500);
+  --theme-button-secondary-icon-rounded-path-color: var(--color-charcoal-900);
+  --theme-button-secondary-icon-rounded-background-color: var(--color-blue-50);
+  --theme-button-secondary-border-color: rgb(153 188 203 / 50%);
+
+  --theme-card-icon-background-color: rgb(255 255 255 / 50%);
+
+  --theme-simple-filters-background-color: var(--color-white);
+  --theme-simple-filters-background-opacity: 0.24;
+  --theme-simple-filters-color: var(--color-white);
+  --theme-simple-filters-checked-background-color: var(--color-white);
+  --theme-simple-filters-checked-background-opacity: 1;
+  --theme-simple-filters-checked-color: var(--color-charcoal-900);
+
+  --theme-section-title-button-color: var(--color-white);
+  --theme-section-title-button-background-color: rgb(255 255 255 / 24%);
+}
+
+.theme__cyan {
+  --theme-background-color: var(--color-blue-200);
+  --theme-accent-color: var(--color-red-500);
+  --theme-heading-color: var(--color-black);
+  --theme-text-color: var(--color-black);
+  --theme-section-title-border-color: var(--color-black);
+  --theme-divider-color: var(--color-blue-50);
+
+  --theme-icon-rounded-background-color: var(--color-blue-100);
+
+  --theme-link-text-color: var(--color-black);
+  --theme-link-icon-rounded-path-color: var(--theme-icon-rounded-path-color);
+  --theme-link-icon-rounded-background-color: var(--theme-icon-rounded-background-color);
+
+  --theme-button-primary-background-color: var(--button-black-background-color);
+  --theme-button-primary-text-color: var(--button-black-text-color);
+  --theme-button-primary-focus-border-color: var(--button-black-focus-border-color);
+  --theme-button-primary-focus-background-opacity: var(--button-black-focus-background-opacity);
+  --theme-button-primary-icon-path-color: var(--button-black-icon-path-color);
+  --theme-button-primary-icon-rounded-path-color: var(--button-black-icon-rounded-path-color);
+  --theme-button-primary-icon-rounded-background-color: var(--button-black-icon-rounded-background-color);
+  --theme-button-primary-border-color: rgb(0 0 0 / 24%);
+
+  --theme-button-secondary-background-color: var(--color-blue-100);
+  --theme-button-secondary-text-color: var(--color-black);
+  --theme-button-secondary-focus-border-color: var(--theme-button-secondary-icon-rounded-background-color);
+  --theme-button-secondary-focus-background-opacity: 0.05;
+  --theme-button-secondary-icon-path-color: var(--color-blue-300);
+  --theme-button-secondary-icon-rounded-path-color: var(--theme-button-secondary-text-color);
+  --theme-button-secondary-icon-rounded-background-color: var(--color-blue-50);
+  --theme-button-secondary-border-color: rgb(0 67 94 / 50%);
+
+  --theme-card-background-color: var(--color-white);
+  --theme-card-icon-background-color: rgb(255 255 255 / 50%);
+
+  --theme-section-title-button-color: var(--color-black);
+  --theme-section-title-button-background-color: rgb(255 255 255 / 32%);
+}
+
+.theme__red {
+  --theme-background-color: var(--color-red-500);
+  --theme-heading-color: var(--color-black);
+  --theme-text-color: var(--color-black);
+  --theme-section-title-border-color: var(--color-black);
+  --theme-divider-color: var(--color-red-200);
+
+  --theme-icon-rounded-background-color: var(--color-red-200);
+
+  --theme-link-text-color: var(--color-black);
+  --theme-link-icon-rounded-path-color: var(--theme-icon-rounded-path-color);
+  --theme-link-icon-rounded-background-color: var(--theme-icon-rounded-background-color);
+
+  --theme-button-primary-background-color: var(--button-black-background-color);
+  --theme-button-primary-text-color: var(--button-black-text-color);
+  --theme-button-primary-focus-border-color: var(--button-black-focus-border-color);
+  --theme-button-primary-focus-background-opacity: var(--button-black-focus-background-opacity);
+  --theme-button-primary-icon-path-color: var(--button-black-icon-path-color);
+  --theme-button-primary-icon-rounded-path-color: var(--button-black-icon-rounded-path-color);
+  --theme-button-primary-icon-rounded-background-color: var(--button-black-icon-rounded-background-color);
+  --theme-button-primary-border-color: rgb(0 0 0 / 24%);
+
+  --theme-button-secondary-background-color: var(--color-red-200);
+  --theme-button-secondary-text-color: var(--color-black);
+  --theme-button-secondary-focus-border-color: var(--theme-button-secondary-icon-rounded-background-color);
+  --theme-button-secondary-focus-background-opacity: 0.05;
+  --theme-button-secondary-icon-path-color: var(--color-red-600);
+  --theme-button-secondary-icon-rounded-path-color: var(--theme-button-secondary-text-color);
+  --theme-button-secondary-icon-rounded-background-color: var(--color-red-50);
+  --theme-button-secondary-border-color: rgb(206 40 49 / 50%);
+
+  --theme-card-icon-background-color: rgb(255 255 255 / 50%);
+
+  --theme-section-title-button-color: var(--color-black);
+  --theme-section-title-button-background-color: rgb(255 255 255 / 32%);
+}
+
+.theme__lilac {
+  --theme-background-color: var(--color-lilac-500);
+  --theme-accent-color: var(--color-red-500);
+  --theme-heading-color: var(--color-black);
+  --theme-text-color: var(--color-black);
+  --theme-section-title-border-color: var(--color-black);
+  --theme-divider-color: var(--color-lilac-200);
+
+  --theme-icon-rounded-background-color: var(--color-lilac-200);
+
+  --theme-link-text-color: var(--color-black);
+  --theme-link-icon-rounded-path-color: var(--theme-icon-rounded-path-color);
+  --theme-link-icon-rounded-background-color: var(--theme-icon-rounded-background-color);
+
+  --theme-button-primary-background-color: var(--button-black-background-color);
+  --theme-button-primary-text-color: var(--button-black-text-color);
+  --theme-button-primary-focus-border-color: var(--button-black-focus-border-color);
+  --theme-button-primary-focus-background-opacity: var(--button-black-focus-background-opacity);
+  --theme-button-primary-icon-path-color: var(--button-black-icon-path-color);
+  --theme-button-primary-icon-rounded-path-color: var(--button-black-icon-rounded-path-color);
+  --theme-button-primary-icon-rounded-background-color: var(--button-black-icon-rounded-background-color);
+  --theme-button-primary-border-color: rgb(0 0 0 / 24%);
+
+  --theme-button-secondary-background-color: var(--color-lilac-200);
+  --theme-button-secondary-text-color: var(--color-black);
+  --theme-button-secondary-focus-border-color: var(--theme-button-secondary-icon-rounded-background-color);
+  --theme-button-secondary-focus-background-opacity: 0.05;
+  --theme-button-secondary-icon-path-color: var(--color-lilac-600);
+  --theme-button-secondary-icon-rounded-path-color: var(--theme-button-secondary-text-color);
+  --theme-button-secondary-icon-rounded-background-color: var(--color-lilac-50);
+  --theme-button-secondary-border-color: rgb(186 117 220 / 50%);
+
+  --theme-card-background-color: var(--color-white);
+  --theme-card-icon-background-color: rgb(255 255 255 / 50%);
+
+  --theme-section-title-button-color: var(--color-black);
+  --theme-section-title-button-background-color: rgb(255 255 255 / 32%);
+}
+
+.theme__taupe {
+  --theme-background-color: var(--color-taupe-500);
+  --theme-accent-color: var(--color-white);
+  --theme-heading-color: var(--color-black);
+  --theme-text-color: var(--color-black);
+  --theme-section-title-border-color: var(--color-black);
+  --theme-divider-color: var(--color-taupe-200);
+
+  --theme-icon-rounded-background-color: var(--color-taupe-200);
+
+  --theme-link-text-color: var(--color-black);
+  --theme-link-icon-rounded-path-color: var(--theme-icon-rounded-path-color);
+  --theme-link-icon-rounded-background-color: var(--theme-icon-rounded-background-color);
+
+  --theme-button-primary-background-color: var(--button-black-background-color);
+  --theme-button-primary-text-color: var(--button-black-text-color);
+  --theme-button-primary-focus-border-color: var(--button-black-focus-border-color);
+  --theme-button-primary-focus-background-opacity: var(--button-black-focus-background-opacity);
+  --theme-button-primary-icon-path-color: var(--button-black-icon-path-color);
+  --theme-button-primary-icon-rounded-path-color: var(--button-black-icon-rounded-path-color);
+  --theme-button-primary-icon-rounded-background-color: var(--button-black-icon-rounded-background-color);
+  --theme-button-primary-border-color: rgb(0 0 0 / 24%);
+
+  --theme-button-secondary-background-color: var(--color-taupe-200);
+  --theme-button-secondary-text-color: var(--color-black);
+  --theme-button-secondary-focus-border-color: var(--theme-button-secondary-icon-rounded-background-color);
+  --theme-button-secondary-focus-background-opacity: 0.05;
+  --theme-button-secondary-icon-path-color: var(--color-taupe-600);
+  --theme-button-secondary-icon-rounded-path-color: var(--theme-button-secondary-text-color);
+  --theme-button-secondary-icon-rounded-background-color: var(--color-taupe-600);
+  --theme-button-secondary-border-color: rgb(180 170 139 / 90%);
+
+  --theme-card-icon-background-color: rgb(255 255 255 / 50%);
+
+  --theme-section-title-button-color: var(--color-black);
+  --theme-section-title-button-background-color: rgb(255 255 255 / 32%);
+}
+
+.theme__cobalt {
+  --theme-background-color: var(--color-cobalt-500);
+  --theme-accent-color: var(--color-blue-500);
+  --theme-heading-color: var(--color-black);
+  --theme-text-color: var(--color-black);
+  --theme-section-title-border-color: var(--color-black);
+  --theme-divider-color: var(--color-cobalt-200);
+
+  --theme-icon-rounded-background-color: var(--color-cobalt-200);
+
+  --theme-link-text-color: var(--color-black);
+  --theme-link-icon-rounded-path-color: var(--theme-icon-rounded-path-color);
+  --theme-link-icon-rounded-background-color: var(--theme-icon-rounded-background-color);
+
+  --theme-button-primary-background-color: var(--button-black-background-color);
+  --theme-button-primary-text-color: var(--button-black-text-color);
+  --theme-button-primary-focus-border-color: var(--button-black-focus-border-color);
+  --theme-button-primary-focus-background-opacity: var(--button-black-focus-background-opacity);
+  --theme-button-primary-icon-path-color: var(--button-black-icon-path-color);
+  --theme-button-primary-icon-rounded-path-color: var(--button-black-icon-rounded-path-color);
+  --theme-button-primary-icon-rounded-background-color: var(--button-black-icon-rounded-background-color);
+  --theme-button-primary-border-color: rgb(0 0 0 / 24%);
+
+  --theme-button-secondary-background-color: var(--color-cobalt-200);
+  --theme-button-secondary-text-color: var(--color-black);
+  --theme-button-secondary-focus-border-color: var(--theme-button-secondary-icon-rounded-background-color);
+  --theme-button-secondary-focus-background-opacity: 0.05;
+  --theme-button-secondary-icon-path-color: var(--color-cobalt-50);
+  --theme-button-secondary-icon-rounded-path-color: var(--theme-button-secondary-text-color);
+  --theme-button-secondary-icon-rounded-background-color: var(--color-cobalt-50);
+  --theme-button-secondary-border-color: rgb(104 94 247 / 50%);
+
+  --theme-card-icon-background-color: rgb(255 255 255 / 50%);
+
+  --theme-section-title-button-color: var(--color-black);
+  --theme-section-title-button-background-color: rgb(255 255 255 / 32%);
+}
+
+.theme__gold {
+  --theme-background-color: var(--color-gold-500);
+  --theme-accent-color: var(--color-white);
+  --theme-heading-color: var(--color-black);
+  --theme-text-color: var(--color-black);
+  --theme-section-title-border-color: var(--color-black);
+  --theme-divider-color: var(--color-gold-200);
+
+  --theme-icon-rounded-background-color: var(--color-gold-200);
+
+  --theme-link-text-color: var(--color-black);
+  --theme-link-icon-rounded-path-color: var(--theme-icon-rounded-path-color);
+  --theme-link-icon-rounded-background-color: var(--theme-icon-rounded-background-color);
+
+  --theme-button-primary-background-color: var(--button-black-background-color);
+  --theme-button-primary-text-color: var(--button-black-text-color);
+  --theme-button-primary-focus-border-color: var(--button-black-focus-border-color);
+  --theme-button-primary-focus-background-opacity: var(--button-black-focus-background-opacity);
+  --theme-button-primary-icon-path-color: var(--button-black-icon-path-color);
+  --theme-button-primary-icon-rounded-path-color: var(--button-black-icon-rounded-path-color);
+  --theme-button-primary-icon-rounded-background-color: var(--button-black-icon-rounded-background-color);
+  --theme-button-primary-border-color: rgb(0 0 0 / 24%);
+
+  --theme-button-secondary-background-color: var(--color-gold-200);
+  --theme-button-secondary-text-color: var(--color-black);
+  --theme-button-secondary-focus-border-color: var(--theme-button-secondary-icon-rounded-background-color);
+  --theme-button-secondary-focus-background-opacity: 0.05;
+  --theme-button-secondary-icon-path-color: var(--color-gold-50);
+  --theme-button-secondary-icon-rounded-path-color: var(--theme-button-secondary-text-color);
+  --theme-button-secondary-icon-rounded-background-color: var(--color-gold-50);
+  --theme-button-secondary-border-color: rgb(179 140 15 / 50%);
+
+  --theme-card-icon-background-color: rgb(255 255 255 / 50%);
+
+  --theme-section-title-button-color: var(--color-black);
+  --theme-section-title-button-background-color: rgb(255 255 255 / 32%);
+}
+
+.theme__canary {
+  --theme-background-color: var(--color-canary-500);
+  --theme-accent-color: var(--color-white);
+  --theme-heading-color: var(--color-black);
+  --theme-text-color: var(--color-black);
+  --theme-section-title-border-color: var(--color-black);
+  --theme-divider-color: var(--color-canary-300);
+
+  --theme-icon-rounded-background-color: var(--color-canary-300);
+
+  --theme-link-text-color: var(--color-black);
+  --theme-link-icon-rounded-path-color: var(--theme-icon-rounded-path-color);
+  --theme-link-icon-rounded-background-color: var(--theme-icon-rounded-background-color);
+
+  --theme-button-primary-background-color: var(--button-black-background-color);
+  --theme-button-primary-text-color: var(--button-black-text-color);
+  --theme-button-primary-focus-border-color: var(--button-black-focus-border-color);
+  --theme-button-primary-focus-background-opacity: var(--button-black-focus-background-opacity);
+  --theme-button-primary-icon-path-color: var(--button-black-icon-path-color);
+  --theme-button-primary-icon-rounded-path-color: var(--button-black-icon-rounded-path-color);
+  --theme-button-primary-icon-rounded-background-color: var(--button-black-icon-rounded-background-color);
+  --theme-button-primary-border-color: rgb(0 0 0 / 24%);
+
+  --theme-button-secondary-background-color: var(--color-canary-300);
+  --theme-button-secondary-text-color: var(--color-black);
+  --theme-button-secondary-focus-border-color: var(--theme-button-secondary-icon-rounded-background-color);
+  --theme-button-secondary-focus-background-opacity: 0.05;
+  --theme-button-secondary-icon-path-color: var(--color-canary-600);
+  --theme-button-secondary-icon-rounded-path-color: var(--theme-button-secondary-text-color);
+  --theme-button-secondary-icon-rounded-background-color: var(--color-canary-50);
+  --theme-button-secondary-border-color: rgb(213 215 48 / 90%);
+
+  --theme-card-icon-background-color: rgb(255 255 255 / 50%);
+
+  --theme-section-title-button-color: var(--color-black);
+  --theme-section-title-button-background-color: rgb(255 255 255 / 50%);
+}
+
+.theme__chlorophyll {
+  --theme-background-color: var(--color-chlorophyll-500);
+  --theme-accent-color: var(--color-blue-500);
+  --theme-heading-color: var(--color-black);
+  --theme-text-color: var(--color-black);
+  --theme-section-title-border-color: var(--color-black);
+  --theme-divider-color: var(--color-chlorophyll-200);
+
+  --theme-icon-rounded-background-color: var(--color-chlorophyll-200);
+
+  --theme-link-text-color: var(--color-black);
+  --theme-link-icon-rounded-path-color: var(--theme-icon-rounded-path-color);
+  --theme-link-icon-rounded-background-color: var(--theme-icon-rounded-background-color);
+
+  --theme-button-primary-background-color: var(--button-black-background-color);
+  --theme-button-primary-text-color: var(--button-black-text-color);
+  --theme-button-primary-focus-border-color: var(--button-black-focus-border-color);
+  --theme-button-primary-focus-background-opacity: var(--button-black-focus-background-opacity);
+  --theme-button-primary-icon-path-color: var(--button-black-icon-path-color);
+  --theme-button-primary-icon-rounded-path-color: var(--button-black-icon-rounded-path-color);
+  --theme-button-primary-icon-rounded-background-color: var(--button-black-icon-rounded-background-color);
+  --theme-button-primary-border-color: rgb(0 0 0 / 24%);
+
+  --theme-button-secondary-background-color: var(--color-chlorophyll-200);
+  --theme-button-secondary-text-color: var(--color-black);
+  --theme-button-secondary-focus-border-color: var(--theme-button-secondary-icon-rounded-background-color);
+  --theme-button-secondary-focus-background-opacity: 0.05;
+  --theme-button-secondary-icon-path-color: var(--color-chlorophyll-500);
+  --theme-button-secondary-icon-rounded-path-color: var(--theme-button-secondary-text-color);
+  --theme-button-secondary-icon-rounded-background-color: var(--color-charcoal-50);
+  --theme-button-secondary-border-color: rgb(73 102 0 / 50%);
+
+  --theme-card-icon-background-color: rgb(255 255 255 / 50%);
+
+  --theme-section-title-button-color: var(--color-black);
+  --theme-section-title-button-background-color: rgb(255 255 255 / 32%);
+}
+
+.theme__orange {
+  --theme-background-color: var(--color-orange-500);
+  --theme-accent-color: var(--color-red-500);
+  --theme-heading-color: var(--color-black);
+  --theme-text-color: var(--color-black);
+  --theme-section-title-border-color: var(--color-black);
+  --theme-divider-color: var(--color-orange-200);
+
+  --theme-icon-rounded-background-color: var(--color-orange-200);
+
+  --theme-link-text-color: var(--color-black);
+  --theme-link-icon-rounded-path-color: var(--theme-icon-rounded-path-color);
+  --theme-link-icon-rounded-background-color: var(--theme-icon-rounded-background-color);
+
+  --theme-button-primary-background-color: var(--button-black-background-color);
+  --theme-button-primary-text-color: var(--button-black-text-color);
+  --theme-button-primary-focus-border-color: var(--button-black-focus-border-color);
+  --theme-button-primary-focus-background-opacity: var(--button-black-focus-background-opacity);
+  --theme-button-primary-icon-path-color: var(--button-black-icon-path-color);
+  --theme-button-primary-icon-rounded-path-color: var(--button-black-icon-rounded-path-color);
+  --theme-button-primary-icon-rounded-background-color: var(--button-black-icon-rounded-background-color);
+  --theme-button-primary-border-color: rgb(0 0 0 / 24%);
+
+  --theme-button-secondary-background-color: var(--color-orange-200);
+  --theme-button-secondary-text-color: var(--color-black);
+  --theme-button-secondary-focus-border-color: var(--theme-button-secondary-icon-rounded-background-color);
+  --theme-button-secondary-focus-background-opacity: 0.05;
+  --theme-button-secondary-icon-path-color: var(--color-orange-500);
+  --theme-button-secondary-icon-rounded-path-color: var(--theme-button-secondary-text-color);
+  --theme-button-secondary-icon-rounded-background-color: var(--color-orange-50);
+  --theme-button-secondary-border-color: rgb(203 86 5 / 90%);
+
+  --theme-card-icon-background-color: rgb(255 255 255 / 50%);
+
+  --theme-section-title-button-color: var(--color-black);
+  --theme-section-title-button-background-color: rgb(255 255 255 / 32%);
+}
+
+.theme__aqua {
+  --theme-background-color: var(--color-aqua-500);
+  --theme-accent-color: var(--color-white);
+  --theme-heading-color: var(--color-black);
+  --theme-text-color: var(--color-black);
+  --theme-section-title-border-color: var(--color-black);
+  --theme-divider-color: var(--color-aqua-300);
+
+  --theme-icon-rounded-background-color: var(--color-aqua-300);
+
+  --theme-link-text-color: var(--color-black);
+  --theme-link-icon-rounded-path-color: var(--theme-icon-rounded-path-color);
+  --theme-link-icon-rounded-background-color: var(--theme-icon-rounded-background-color);
+
+  --theme-button-primary-background-color: var(--button-black-background-color);
+  --theme-button-primary-text-color: var(--button-black-text-color);
+  --theme-button-primary-focus-border-color: var(--button-black-focus-border-color);
+  --theme-button-primary-focus-background-opacity: var(--button-black-focus-background-opacity);
+  --theme-button-primary-icon-path-color: var(--button-black-icon-path-color);
+  --theme-button-primary-icon-rounded-path-color: var(--button-black-icon-rounded-path-color);
+  --theme-button-primary-icon-rounded-background-color: var(--button-black-icon-rounded-background-color);
+  --theme-button-primary-border-color: rgb(0 0 0 / 24%);
+
+  --theme-button-secondary-background-color: var(--color-aqua-300);
+  --theme-button-secondary-text-color: var(--color-black);
+  --theme-button-secondary-focus-border-color: var(--theme-button-secondary-icon-rounded-background-color);
+  --theme-button-secondary-focus-background-opacity: 0.05;
+  --theme-button-secondary-icon-path-color: var(--color-aqua-600);
+  --theme-button-secondary-icon-rounded-path-color: var(--theme-button-secondary-text-color);
+  --theme-button-secondary-icon-rounded-background-color: var(--color-white);
+  --theme-button-secondary-border-color: rgb(229 226 214 / 90%);
+
+  --theme-card-icon-background-color: rgb(255 255 255 / 50%);
+
+  --theme-section-title-button-color: var(--color-black);
+  --theme-section-title-button-background-color: rgb(255 255 255 / 50%);
+}

@@ -1,0 +1,261 @@
+/**
+ * Variables
+ * =========
+ * |- Colors
+ * |- Layout
+ * |- Motion
+ * |- Spacings
+ * |- Media Queries
+ */
+
+:root {
+  /**
+   * Colors
+   * @see {@link https://en.wikipedia.org/wiki/List_of_colors_by_shade}
+   */
+
+  /* Primary */
+
+  --color-red-50: #f7abaf;
+  --color-red-200: #f17177;
+  --color-red-500: #eb2d37;
+  --color-red-600: #ce2831;
+  --color-red-error: #c52806;
+
+  --color-blue-50: #e0ebef;
+  --color-blue-100: #b8d0da;
+  --color-blue-200: #99bccb;
+  --color-blue-300: #669bb0;
+  --color-blue-400: #337996;
+  --color-blue-500: #00587c;
+  --color-blue-600: #00435e;
+  --color-blue-700: #00354a;
+  --color-blue-800: #002332;
+
+  --color-charcoal-50: #e1e3e4;
+  --color-charcoal-100: #babfc0;
+  --color-charcoal-200: #9ca3a5;
+  --color-charcoal-400: #576266;
+  --color-charcoal-500: #424f54;
+  --color-charcoal-900: #07181e;
+
+  /* Secondary */
+
+  --color-lilac-50: #eecefd;
+  --color-lilac-200: #e2acfc;
+  --color-lilac-500: #d485fa;
+  --color-lilac-600: #ba75dc;
+
+  --color-taupe-50: #ebe6d8;
+  --color-taupe-200: #ddd5bd;
+  --color-taupe-500: #cdc19e;
+  --color-taupe-600: #b4aa8b;
+
+  --color-cobalt-50: #c3bffc;
+  --color-cobalt-200: #9992fa;
+  --color-cobalt-500: #685ef7;
+  --color-cobalt-600: #5b53d9;
+
+  --color-gold-50: #ebd9a0;
+  --color-gold-200: #dcbe5e;
+  --color-gold-500: #cc9f11;
+  --color-gold-600: #b38c0f;
+  --color-gold-error: #ffb300;
+
+  --color-canary-50: #fdfee7;
+  --color-canary-300: #fafbaf;
+  --color-canary-500: #f2f537;
+  --color-canary-600: #d5d730;
+
+  --color-chlorophyll-50: #eef2e5;
+  --color-chlorophyll-200: #bdcc99;
+  --color-chlorophyll-500: #5b8000;
+  --color-chlorophyll-600: #496600;
+
+  --color-orange-50: #fff0e6;
+  --color-orange-200: #ffc49b;
+  --color-orange-500: #fe6c06;
+  --color-orange-600: #cb5605;
+
+  --color-aqua-50: #f3fefa;
+  --color-aqua-300: #d7fbee;
+  --color-aqua-500: #9cf6d4;
+  --color-aqua-600: #89d8ba;
+
+  /* Neutral */
+
+  --color-white: #fff;
+
+  --color-cream-200: #fdfbf6;
+  --color-cream-300: #fbf9f1;
+  --color-cream-400: #faf7ed;
+  --color-cream-500: #f8f5e9;
+  --color-cream-600: #e5e2d6;
+  --color-cream-700: #c7c4ba;
+
+  --color-black: #000;
+
+  /**
+   * Buttons
+   */
+
+  --button-black-background-color: var(--color-charcoal-900);
+  --button-black-text-color: var(--color-white);
+  --button-black-focus-border-color: var(--button-black-background-color);
+  --button-black-focus-background-opacity: 0.25;
+  --button-black-icon-path-color: var(--color-charcoal-200);
+  --button-black-icon-rounded-path-color: var(--button-black-background-color);
+  --button-black-icon-rounded-background-color: var(--button-black-icon-path-color);
+
+  --button-blue-background-color: var(--color-blue-500);
+  --button-blue-text-color: var(--color-white);
+  --button-blue-focus-border-color: var(--color-charcoal-900);
+  --button-blue-focus-background-opacity: 0.05;
+  --button-blue-icon-path-color: var(--color-blue-300);
+  --button-blue-icon-rounded-path-color: var(--button-blue-background-color);
+  --button-blue-icon-rounded-background-color: var(--color-blue-200);
+
+  --button-white-background-color: var(--color-white);
+  --button-white-text-color: var(--color-charcoal-900);
+  --button-white-focus-border-color: var(--color-charcoal-50);
+  --button-white-focus-background-opacity: 0.25;
+  --button-white-icon-path-color: var(--color-charcoal-200);
+  --button-white-icon-rounded-path-color: var(--button-white-text-color);
+  --button-white-icon-rounded-background-color: var(--color-cream-500);
+
+  /**
+   * Corner radius
+   */
+
+  --corner-radius-round: 50%; /* Button, Icon with circle */
+  --corner-radius-xs: 0.6rem; /* Checkbox, Text field, Card */
+  --corner-radius-sm: 4.8rem; /* Navigation drawer, Content block mobile, Card */
+  --corner-radius-md: 11.2rem; /* Footer, Content block */
+  --corner-radius-lg: 13.6rem; /* Hero, Content block 50-50 desktops */
+  --corner-radius-xl: 28rem; /* Hero */
+
+  /**
+   * Layout
+   * @see {@link https://www.smashingmagazine.com/2014/06/sassy-z-index-management-for-complex-layouts/}
+   */
+
+  --bar-height: 6rem; /* SiteHeader bar, SecondaryNavigation bar */
+
+  --container-max-width-xs: 100%;
+  --container-max-width-sm: 100%;
+  --container-max-width-md: 72rem;
+  --container-max-width-lg: 96rem;
+  --container-max-width-xl: 113rem;
+
+  --ratio-3-1: 3 / 1; /* 3 */
+  --ratio-2-1: 2 / 1; /* 2 */
+  --ratio-16-9: 16 / 9; /* 1.7777 */
+  --ratio-3-2: 3 / 2; /* 1.5 */
+  --ratio-4-3: 4 / 3; /* 1.3333 */
+  --ratio-1-95: 1 / 0.95; /* 1.0526 - Hero ratio */
+  --ratio-1-1: 1 / 1; /* 1 */
+  --ratio-3-4: 3 / 4; /* 0.75 */
+  --ratio-2-3: 2 / 3; /* 0.6666 */
+  --ratio-9-16: 9 / 16; /* 0.5625 */
+
+  --z-index-main: 1;
+  --z-index-sidenav: 2;
+  --z-index-nav: 3;
+  --z-index-header: 4;
+  --z-index-modal: 5;
+  --z-index-notification: 6;
+  --z-index-section: 1;
+
+  /**
+   * Motion
+   * @see {@link https://carbondesignsystem.com/guidelines/motion/overview/}
+   */
+
+  --duration-none: 0s;
+  --duration-fast: 0.1s; /* Micro-interactions such as small expansion, short distance movements */
+  --duration-moderate: 0.25s; /* Expansion, system communication, toast */
+  --duration-slow: 0.4s; /* Large expansion, important system notifications */
+  --duration-long: 0.7s; /* Background dimming */
+
+  --easing-enter-expressive: cubic-bezier(0, 0, 0.3, 1);
+  --easing-enter-productive: cubic-bezier(0, 0, 0.38, 0.9);
+  --easing-exit-expressive: cubic-bezier(0.4, 0.14, 1, 1);
+  --easing-exit-productive: cubic-bezier(0.2, 0, 1, 0.9);
+  --easing-standard-expressive: cubic-bezier(0.4, 0.14, 0.3, 1);
+  --easing-standard-productive: cubic-bezier(0.2, 0, 0.38, 0.9);
+
+  /**
+   * Spacings
+   * These are derived only from the values listed in the Figma file,
+   * while the naming follows the Tailwind pattern, where the number following
+   * "--spacing-" multiplied by 4 equals the pixel value of the variable.
+   *
+   * You can add to these where necessary, as we would like to avoid using
+   * random <X>rem values in stylesheets.
+   */
+
+  --spacing-0: 0rem; /* 0px */
+  --spacing-1: 0.4rem; /* 4px */
+  --spacing-2: 0.8rem; /* 8px */
+  --spacing-3: 1.2rem; /* 12px */
+  --spacing-4: 1.6rem; /* 16px */
+  --spacing-5: 2rem; /* 20px */
+  --spacing-6: 2.4rem; /* 24px */
+  --spacing-7: 2.8rem; /* 28px */
+  --spacing-8: 3.2rem; /* 32px */
+  --spacing-9: 3.6rem; /* 36px */
+  --spacing-10: 4rem; /* 40px */
+  --spacing-11: 4.4rem; /* 44px */
+  --spacing-12: 4.8rem; /* 48px */
+  --spacing-15: 6rem; /* 60px */
+  --spacing-16: 6.4rem; /* 64px */
+  --spacing-18: 7.2rem; /* 72px */
+  --spacing-20: 8rem; /* 80px */
+  --spacing-22: 8.8rem; /* 88px */
+  --spacing-24: 9.6rem; /* 96px */
+  --spacing-30: 12rem; /* 120px */
+  --spacing-34: 14.2rem; /* 142px */
+  --spacing-40: 16rem; /* 160px */
+
+  --font-size-html: 62.5%; /* 62.5% of 16px browser font size is 10px */
+  --font-size-body: 1.6rem; /* 1.6 * 10px = 16px */
+
+  --font-size-h1: fluid(3.6rem / 76.8rem, 5.6rem / 144rem);
+  --font-size-h2: fluid(2.8rem / 76.8rem, 4.4rem / 144rem);
+  --font-size-h3: fluid(2.4rem / 76.8rem, 2.8rem / 144rem);
+  --font-size-h4: fluid(2rem / 76.8rem, 2.4rem / 144rem);
+  --font-size-h5: fluid(1.8rem / 76.8rem, 2rem / 144rem);
+  --font-size-h6: fluid(1.6rem / 76.8rem, 1.8rem / 144rem);
+
+  --font-size-display-l: fluid(7.2rem / 76.8rem, 10.4rem / 144rem);
+  --font-size-display-m: fluid(4.4rem / 76.8rem, 5.6rem / 144rem);
+  --font-size-display-s: fluid(2rem / 76.8rem, 2.8rem / 144rem);
+
+  --font-size-body-xxl: 2.8rem;
+  --font-size-body-xl: 2rem;
+  --font-size-body-l: 1.8rem;
+  --font-size-body-m: 1.6rem;
+  --font-size-body-s: 1.4rem;
+  --font-size-body-xs: 1.2rem;
+
+  --line-height-body: 1.4;
+  --letter-spacing-body: -0.02em;
+
+  --current-color: currentcolor;
+
+  /**
+  * Editorial
+  */
+
+  --editorial-section-grid-columns: [full-start] var(--spacing-5) [content-start] 1fr [content-end] var(--spacing-5) [full-end];
+
+  /**
+   * Typography
+   * @see {@link https://www.aleksandrhovhannisyan.com/blog/62-5-percent-font-size-trick/}
+   */
+
+  @function fluid($--min-value, $--max-value, $--min-viewport: 76.8rem, $--max-viewport: 144rem) {
+    // clamp(min-value, fluid-value, max-value)
+    @return clamp(#{$--min-value}, calc(#{$--min-value} + (#{$--max-value} - #{$--min-value}) * ((100vw - #{$--min-viewport}) / (#{$--max-viewport} - #{$--min-viewport}))), #{$--max-value});
+  }
+}
