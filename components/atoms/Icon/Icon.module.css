@@ -1,0 +1,122 @@
+.icon {
+  clip-rule: evenodd;
+  color: var(--theme-icon-path-color, currentColor);
+  display: flex;
+  fill: currentcolor;
+  fill-rule: evenodd;
+  font-size: var(--icon-size, 1em); /* font-size used for width & height */
+  height: 1em;
+  justify-content: center;
+  min-width: 1em;
+  pointer-events: none;
+  width: 1em;
+
+  /* sizes */
+
+  &__isExtraExtraExtraSmall {
+    --icon-size: var(--spacing-2); /* 8px */
+  }
+
+  &__isExtraExtraSmall {
+    --icon-size: var(--spacing-4); /* 16px */
+  }
+
+  &__isExtraSmall {
+    --icon-size: var(--spacing-5); /* 20px */
+  }
+
+  &__isSmall {
+    --icon-size: var(--spacing-6); /* 24px */
+  }
+
+  &__isMedium {
+    --icon-size: var(--spacing-8); /* 32px */
+  }
+
+  &__isLarge {
+    --icon-size: var(--spacing-10); /* 40px */
+  }
+
+  &__isExtraLarge {
+    --icon-size: var(--spacing-12); /* 48px */
+  }
+
+  /* colors */
+
+  &__white {
+    color: var(--color-white);
+  }
+
+  &__cream {
+    color: var(--color-cream-500);
+  }
+
+  &__charcoal {
+    color: var(--color-charcoal-900);
+  }
+
+  &__blue {
+    color: var(--color-blue-500);
+  }
+
+  &__red {
+    color: var(--color-red-500);
+  }
+
+  &__lilac {
+    color: var(--color-lilac-500);
+  }
+
+  &__taupe {
+    color: var(--color-taupe-500);
+  }
+
+  &__cobalt {
+    color: var(--color-cobalt-500);
+  }
+
+  &__gold {
+    color: var(--color-gold-500);
+  }
+
+  &__canary {
+    color: var(--color-canary-500);
+  }
+
+  &__chlorophyll {
+    color: var(--color-chlorophyll-500);
+  }
+
+  &__orange {
+    color: var(--color-orange-500);
+  }
+
+  &__aqua {
+    color: var(--color-aqua-500);
+  }
+
+  /* variants */
+
+  &__isRounded {
+    background-color: var(--theme-icon-rounded-background-color);
+    border-radius: var(--corner-radius-round, 50%);
+    color: var(--theme-icon-rounded-path-color, var(--theme-icon-path-color));
+    padding: 0.2em;
+    transition:
+      background-color var(--duration-moderate) var(--easing-standard-expressive),
+      transform var(--duration-moderate) var(--easing-standard-expressive);
+  }
+}
+
+/* exceptions */
+
+.icon__isRounded.icon__arrowTopRight {
+  padding: 0.28em;
+}
+
+.icon__isRounded.icon__chevronDown,
+.icon__isRounded.icon__chevronLeft,
+.icon__isRounded.icon__chevronRight,
+.icon__isRounded.icon__chevronUp {
+  padding: 0.25em;
+}

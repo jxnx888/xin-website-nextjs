@@ -1,9 +1,14 @@
-import { AntdRegistry } from '@ant-design/nextjs-registry';
-import "../../styles/globals.css";
-
+import { SiteHeader } from "@/components/organisms/SiteHeader";
+import { TranslationsProvider } from "@/Translation/TranslationsProvider";
+import { initTranslations } from "@/Translation/util/initTranslations";
 import { Viewport } from 'next';
+import { createTheme, MantineProvider, ColorSchemeScript } from '@mantine/core';
 
-import {Header} from "@/components/header";
+const theme = createTheme({
+  /** Put your mantine theme override here */
+});
+
+import "../../styles/globals.scss";
 
 export const runtime = 'edge';
 
@@ -17,9 +22,10 @@ type LayoutProps = {
   };
 };
 
+const i18nNamespaces = ['common'];
 
-export default async function Layout({ children, params }: LayoutProps) {
-
+export default async function Layout({children, params}: LayoutProps) {
+  const {resources} = await initTranslations({locale: params.lang || 'en', namespaces: i18nNamespaces});
   return (
     <html
       lang={params.lang}
@@ -27,12 +33,19 @@ export default async function Layout({ children, params }: LayoutProps) {
     <head>
       <link rel="shortcut icon" href="/favicon.ico"/>
       <title>Xin Ning :: Personal Website</title>
+      <ColorSchemeScript/>
     </head>
     <body>
-    <Header />
-    <AntdRegistry>
-      {children}
-    </AntdRegistry>
+    <MantineProvider theme={theme}>
+      <TranslationsProvider
+        namespaces={i18nNamespaces}
+        locale={params.lang}
+        resources={resources}
+      >
+        <SiteHeader/>
+        {children}
+      </TranslationsProvider>
+    </MantineProvider>
     </body>
 
     </html>
